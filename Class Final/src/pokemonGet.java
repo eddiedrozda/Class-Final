@@ -1,5 +1,4 @@
 
-
 public class pokemonGet 
 {
 	int randomNumber = (int) ((Math.random() * 3) + 1);
@@ -25,6 +24,5 @@ public class pokemonGet
 	System.out.println(itsAnArray.get(i).getHealth() + " ");
 	System.out.println(itsAnArray.get(i).getAttack() + " ");
 	System.out.println();
-	
-		}
-	
+}
+		
