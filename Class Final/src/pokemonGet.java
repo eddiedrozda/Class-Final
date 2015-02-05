@@ -1,6 +1,18 @@
-
+import java.util.ArrayList;
 public class pokemonGet 
 {
+
+public static void PokemonAssign()
+{
+	ArrayList <Pokemon> roster = new ArrayList <Pokemon>();
+	roster.add(new Pokemon("Charmander", 40, 10));
+	roster.add(new Pokemon("Bulbasaur", 40, 10));
+	roster.add(new Pokemon("Squirtle", 40, 10));
+	
+	
+	for(int i = 0; i < roster.size(); i++)
+	{
+	int choice = 0;
 	int randomNumber = (int) ((Math.random() * 3) + 1);
 		{
 	if(choice == 1)
@@ -15,14 +27,14 @@ public class pokemonGet
 		{
 		System.out.println("Squirtle");
 		}
-	itsAnArray.add(new Pokemon("Charmander", 40, 10));
-	itsAnArray.add(new Pokemon("Bulbasuar", 40, 10));
-	itsAnArray.add(new Pokemon("Squirtle", 40, 10));
-	for(int i = 0; i < itsAnArray.size(); i++)
+	roster.add(new Pokemon("Charmander", 40, 10));
+	roster.add(new Pokemon("Bulbasuar", 40, 10));
+	roster.add(new Pokemon("Squirtle", 40, 10));
+	for(int i = 0; i < roster.size(); i++)
 		{
-	System.out.println(itsAnArray.get(i).getName() + " ");
-	System.out.println(itsAnArray.get(i).getHealth() + " ");
-	System.out.println(itsAnArray.get(i).getAttack() + " ");
+	System.out.println(roster.get(i).getName() + " ");
+	System.out.println(roster.get(i).getHealth() + " ");
+	System.out.println(roster.get(i).getAttack() + " ");
 	System.out.println();
 }
 		
