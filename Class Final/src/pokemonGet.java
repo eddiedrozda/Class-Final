@@ -5,10 +5,10 @@ public class pokemonGet
 	static ArrayList <Pokemon> roster = new ArrayList <Pokemon>();
 	public static void stats()
 		{
-
 		roster.add(new Pokemon("Charmander", 48, 9));
 		roster.add(new Pokemon("Bulbasaur", 44, 10));
 		roster.add(new Pokemon("Squirtle", 40, 13));
+		
 		Pokemon p = new Pokemon(" ", 0, 0);
 		for(int i = 0; i < roster.size(); i++)
 			{
@@ -42,7 +42,4 @@ public class pokemonGet
 				System.out.println();
 				}	
 			}
-
-			
-		
 	}

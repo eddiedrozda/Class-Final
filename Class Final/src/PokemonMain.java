@@ -9,13 +9,13 @@ public class PokemonMain
 		pokemonGet.stats();
 
 		Pokemon ai = new Pokemon(" ", 0, 0);
-		PokemonPlayer.AIChoose();
+		PokemonAI.AIChoose();
 		
 		int counter = 0;
 		while(playing)
 			{
 			PokemonPlayer.playerAttack();
-			PokemonAI.AIAttack
+			PokemonAI.AIAttack();
 			PokemonPlayer.diplayHealth();
 			
 			counter = counter + 1;
