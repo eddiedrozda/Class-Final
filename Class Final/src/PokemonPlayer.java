@@ -3,42 +3,45 @@ import java.util.Scanner;
 
 public class PokemonPlayer
 	{
-	public static void giveName()
+	static int tackleDamage = 10;
+	int slashDamage = 12;
+	int rageDamage = 9;
+	int growlDamage = - 10;
+	public static void greetGive()
 	{
 		Scanner userInput = new Scanner(System.in);
 		System.out.println("Hello. Welcome to the Poke Arena. What is your name?");
 		String name = userInput.nextLine();
 		System.out.println("Hello " + name + ", please pick your pokemon...");	
-		System.out.println("1 = Charmander");
-		System.out.println("2 = Bulbasaur");
-		System.out.println("3 = Squirtle");
-		
-		
+		System.out.println("1- Charmander");
+		System.out.println("2- Bulbasaur");
+		System.out.println("3- Squirtle");
+	
 		int pokemonChoice = userInput.nextInt();		
 		double attack = 0;
-		
+	
 		System.out.println("Pick your move!");
 		System.out.println("1- " + "Tackle");
 		System.out.println("2- " + "Slash");
 		System.out.println("3- " + "Rage");
-		System.out.println("4- " + "Leaf blade");
+		System.out.println("4- " + "Growl");
 		int moveChoice = userInput.nextInt();
 		
 		if(moveChoice == 1)
 			{
-			System.out.println("Tackle does" + getDamage(pokemonChoice) + "damage to" + Pokemon Pokemon2);	
+			System.out.println("Tackle does" + tackleDamage +" damage to" + AIPokemon);	
 			}
 		else if(moveChoice == 2)
 			{
-			System.out.println();
+			System.out.println("Slash does 10" + " damage to" + AIPokemon);
 			}
 		else if(moveChoice == 3)
 			{
-			System.out.println();
+			System.out.println("Rage does 10" + " damage to" + AIPokemon);
 			}
 		else if(moveChoice == 4)
 			{
-			System.out.println();
+			System.out.println("growl takes 3" + " damage points away from" + AIPokemon);
 			}
 		
 		}
